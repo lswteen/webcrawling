@@ -2,7 +2,7 @@
 name = "crawling"
 version = "0.0.1"
 description = "web crawling"
-authors = ["이순우 <renzo.1980@jobkorea.co.kr>"]
+authors = ["renzo <renzo.1980@jobkorea.co.kr>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
