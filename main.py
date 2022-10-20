@@ -1,7 +1,7 @@
 # main.py
 import requests
 from fastapi import FastAPI # FastAPI 모듈 가져오기
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup as bs
 
 app = FastAPI() # 객체 생성
 
@@ -26,10 +26,10 @@ def web_a():
     answer = ''
     if response.status_code == 200:
         html = response.text
-        soup = BeautifulSoup(html, 'html.parser')
-        print(soup)
+        soup = bs(html, 'html.parser')
+        answer = soup
     else:
-        print(response.status_code)
+        answer = response.status_code
     return {
-        "json"
+        "html" : print(answer)
     }
