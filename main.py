@@ -44,7 +44,7 @@ def inflearn():
 
     return {
         "page" : "inflearn",
-        "title" : title,기
+        "title" : title,
         "imagePath" : image,
         "contents" : contents,
         "link" : url
