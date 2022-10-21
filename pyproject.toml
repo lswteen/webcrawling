@@ -1,8 +1,9 @@
 [tool.poetry]
 name = "crawling"
 version = "0.0.1"
-description = "web crawling"
-authors = ["renzo <renzo.1980@jobkorea.co.kr>"]
+description = "python web crawling"
+authors = ["renzo"]
+license = "mit"
 readme = "README.md"
 
 [tool.poetry.dependencies]
@@ -13,6 +14,11 @@ beautifulsoup4 = "^4.11.1"
 selenium = "^4.5.0"
 uvicorn = "^0.19.0"
 
+[tool.poetry.group.dev.dependencies]
+requests = "^2.28.1"
+beautifulsoup4 = "^4.11.1"
+selenium = "^4.5.0"
+uvicorn = "^0.19.0"
 
 [build-system]
 requires = ["poetry-core"]
